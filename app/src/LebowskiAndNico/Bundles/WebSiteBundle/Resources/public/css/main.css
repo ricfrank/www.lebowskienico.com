@@ -1,0 +1,16 @@
+.LeftCol{
+  width: 33%;
+  position: fixed;
+  background-color: #2B2B2B;
+  height: 500px;
+}
+
+.RightCol{
+  width: 67%;
+  background-color: #F7F7F7;
+  float: right;
+  height: 500px;
+  background-image: url('../images/square-grid.png');
+  background-repeat: repeat;
+}
+

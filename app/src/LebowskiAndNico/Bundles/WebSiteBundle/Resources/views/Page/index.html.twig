@@ -1,0 +1,23 @@
+{% extends "::base.html.twig" %}
+
+{% block stylesheets %}
+    {% stylesheets '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/css/*' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+    <div class="LeftCol">
+        Left
+    </div>
+    <div class="RightCol">
+        {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:tour' %}
+    </div>
+    
+{% endblock %}
+
+{% block javascripts %}
+    {% javascripts '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/*' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
