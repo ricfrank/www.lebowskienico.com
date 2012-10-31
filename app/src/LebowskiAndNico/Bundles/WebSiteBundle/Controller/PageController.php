@@ -25,4 +25,14 @@ class PageController extends Controller
     {
           return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:tour.html.twig', array('content' => 'ciao'));
     }
+    
+    /**
+     * @Route("/biografia")
+     * @Template()
+     */
+    public function bioAction()
+    {
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:bio.html.twig', array('content' => 'ciao'));
+    }
+    
 }

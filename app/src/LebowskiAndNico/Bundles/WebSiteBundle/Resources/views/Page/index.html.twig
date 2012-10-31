@@ -1,25 +1,27 @@
 {% extends "::base.html.twig" %}
 
 {% block stylesheets %}
-      {% stylesheets 'bundles/lebowskiandnicobundleswebsite/css/*'
-                     'bundles/lebowskiandnicobundleswebsite/bootstrap/css/bootstrap.css'
-                     'bundles/lebowskiandnicobundleswebsite/bootstrap/css/bootstrap-responsive.css' filter='cssrewrite' %}
+      {% stylesheets 'bundles/lebowskiandnicobundleswebsite/bootstrap/css/bootstrap.css'
+                     'bundles/lebowskiandnicobundleswebsite/bootstrap/css/bootstrap-responsive.css'
+                     'bundles/lebowskiandnicobundleswebsite/css/*' filter='cssrewrite' %}
           <link rel="stylesheet" href="{{ asset_url }}" />
       {% endstylesheets %}
 {% endblock %}
 
 {% block body %}
-    <div class="container-fluid">     
-        <div class="row-fluid">
+     <div class="container-fluid">     
+        <div class="row-fluid MainContainer">
             <div class="span4 LeftCol">
                 <ul class="nav nav-list affix MainMenu">
                     <li class="active"><a href="#LebowskiNicoTour">Tour</a></li>
+                    <li><a href="#LebowskiNicoBio">Biografia</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Library</a></li>
+                    <li><p>Box per scrivere qualcosa ..</p></li>
                 </ul>
             </div>
-            <div class="span8 RightCol">
+            <div class="span8">
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:tour' %}
+                {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:bio' %}
             </div>
         </div>
     </div>

@@ -1,22 +1,28 @@
 .LeftCol{
-/*  position: fixed;*/
   background-color: #2B2B2B;
   height: 500px;
 }
 
-.RightCol{
+.MainContainer{
   background-color: #F7F7F7;
-  height: 1000px;
   background-image: url('../images/square-grid.png');
   background-repeat: repeat;
 }
 
 .MainMenu{
-  width: 28%;
+  width: 31%;
   text-align: right;
 }
 
 .MainMenu a{
   font-size: 2.1em;
   line-height: 2.1em;
+}
+
+.row-fluid .span4 {
+  width: 34%;
+}
+
+.row-fluid .span8 {
+  width: 61%;
 }

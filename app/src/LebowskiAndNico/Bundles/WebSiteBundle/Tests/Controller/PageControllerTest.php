@@ -6,6 +6,17 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class PageControllerTest extends WebTestCase
 {
+
+    public function testBioPage()
+    {
+        $client = static::createClient();
+
+        $crawler = $client->request('GET', '/biografia');
+        
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        $this->assertGreaterThan(0, $crawler->filter('html:contains("Biografia")')->count());
+    }
+  
     public function testTourPage()
     {
         $client = static::createClient();
