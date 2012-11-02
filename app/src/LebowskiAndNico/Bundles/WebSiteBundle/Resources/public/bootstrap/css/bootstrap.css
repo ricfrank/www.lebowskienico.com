@@ -3802,7 +3802,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
-  color: #DB7030;
+  color: #0098c7;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 /*  background-color: #0088cc;*/
 }

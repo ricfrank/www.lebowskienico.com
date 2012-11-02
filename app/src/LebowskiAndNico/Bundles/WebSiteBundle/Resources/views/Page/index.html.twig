@@ -13,26 +13,33 @@
         <div class="row-fluid MainContainer">
             <div class="span4 LeftCol">
                 <ul class="nav nav-list affix MainMenu">
-                    <li class="active"><a href="#LebowskiNicoTour">Tour</a></li>
-                    <li><a href="#LebowskiNicoBio">Biografia</a></li>
+                    <li class="active"><a href="#LebowskiNicoHome">home</a></li>
+                    <li><a href="#LebowskiNicoTour">tour</a></li>
+                    <li><a href="#LebowskiNicoBio">biografia</a></li>
+                    <li><a href="#LebowskiNicoContatti">contatti</a></li>
                     <li class="divider"></li>
                     <li><p>Box per scrivere qualcosa ..</p></li>
                 </ul>
             </div>
-            <div class="span8">
+            <div class="span8 ContentCol">
+                {% include 'LebowskiAndNicoBundlesWebSiteBundle:Page:modalTeaser.html.twig' %}
+                {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:home' %}
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:tour' %}
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:bio' %}
+                {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:contact' %}
             </div>
         </div>
     </div>
-          
+    
+      
     
 {% endblock %}
 
 {% block javascripts %}
-    {% javascripts '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/*'
+    {% javascripts 
                    '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/libs/jquery-1.8.2.min.js'
-                   '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/bootstrap/js/bootstrap.js' %}
+                   '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/bootstrap/js/bootstrap.js'
+                   '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/*' %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}
