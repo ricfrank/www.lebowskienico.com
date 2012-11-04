@@ -3,15 +3,14 @@
         var context = $(context);
         var subject = $(subject, context);
         var target = $(target, context);
-        var offsetText = 60;
-        
+        var offsetText = 120;
         var heightBox = subject.height() + offsetText + 'px';
+
         target.css('height', heightBox); 
     }
     
     $(document).ready(function(){
-        init('body', '.LeftCol', '.ContentCol');
-        $('#teaserPropaganda').modal('show');
+        init('body', '.MainMenu', '.ContentCol');
     });
     
 })(jQuery);

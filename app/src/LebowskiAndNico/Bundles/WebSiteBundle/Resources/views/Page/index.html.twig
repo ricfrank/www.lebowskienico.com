@@ -14,19 +14,21 @@
             <div class="span4 LeftCol">
                 <ul class="nav nav-list affix MainMenu">
                     <li class="active"><a href="#LebowskiNicoHome">home</a></li>
+                    <li class="active"><a href="#LebowskiNicoHome">video</a></li>
+                    <li class="active"><a href="#LebowskiNicoHome">foto</a></li>
                     <li><a href="#LebowskiNicoTour">tour</a></li>
                     <li><a href="#LebowskiNicoBio">biografia</a></li>
                     <li><a href="#LebowskiNicoContatti">contatti</a></li>
                     <li class="divider"></li>
-                    <li><p>Box per scrivere qualcosa ..</p></li>
+                    <li><p>Player audio e social network</p></li>
                 </ul>
             </div>
             <div class="span8 ContentCol">
-                {% include 'LebowskiAndNicoBundlesWebSiteBundle:Page:modalTeaser.html.twig' %}
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:home' %}
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:tour' %}
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:bio' %}
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:contact' %}
+                {% include 'LebowskiAndNicoBundlesWebSiteBundle:Page:modalTeaser.html.twig' %}
             </div>
         </div>
     </div>
@@ -39,7 +41,8 @@
     {% javascripts 
                    '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/libs/jquery-1.8.2.min.js'
                    '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/bootstrap/js/bootstrap.js'
-                   '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/*' %}
+                   '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/UiHeightManager.js'
+                   '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/ModalTeaserShower.js' %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}

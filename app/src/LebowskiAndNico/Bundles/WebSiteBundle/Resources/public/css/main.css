@@ -1,9 +1,3 @@
-.LeftCol{
-  background-color: #2B2B2B;
-  background-image: url('../images/left_col_background.png');
-  height: 800px;
-}
-
 .MainContainer{
   background-color: #F7F7F7;
   background-image: url('../images/square-grid.png');
@@ -14,6 +8,8 @@
   width: 31%;
   text-align: right;
   padding-top: 80px;
+  background-color: #2B2B2B;
+  background-image: url('../images/left_col_background.png');
 }
 
 .MainMenu a{
