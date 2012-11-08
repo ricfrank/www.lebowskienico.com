@@ -14,8 +14,7 @@
             <div class="span4 LeftCol">
                 <ul class="nav nav-list affix MainMenu">
                     <li class="active"><a href="#LebowskiNicoHome">home</a></li>
-                    <li class="active"><a href="#LebowskiNicoHome">video</a></li>
-                    <li class="active"><a href="#LebowskiNicoHome">foto</a></li>
+                    <li><a href="#LebowskiNicoGallery">gallery</a></li>
                     <li><a href="#LebowskiNicoTour">tour</a></li>
                     <li><a href="#LebowskiNicoBio">biografia</a></li>
                     <li><a href="#LebowskiNicoContatti">contatti</a></li>
@@ -25,6 +24,7 @@
             </div>
             <div class="span8 ContentCol">
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:home' %}
+                {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:gallery' %}
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:tour' %}
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:bio' %}
                 {% render 'LebowskiAndNicoBundlesWebSiteBundle:Page:contact' %}
@@ -42,7 +42,8 @@
                    '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/libs/jquery-1.8.2.min.js'
                    '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/bootstrap/js/bootstrap.js'
                    '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/UiHeightManager.js'
-                   '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/ModalTeaserShower.js' %}
+                   '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/ModalTeaserShower.js'
+                   '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/js/UiGallery.js' %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}

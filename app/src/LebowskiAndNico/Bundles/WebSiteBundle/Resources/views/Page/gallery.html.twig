@@ -1,0 +1,29 @@
+<section id="LebowskiNicoGallery">
+  <h2>gallery</h2>
+  <h3>la nostra galleria fotografica</h3>
+      <div id="galleryCarousel" class="carousel slide">
+      <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+            {% image '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/images/lebowski_band.jpg' %}
+                <img src="{{ asset_url }}" alt='lebowski live' />
+            {% endimage %}
+            <div class="carousel-caption">
+                              <h4>lebowski live</h4>
+                              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+            </div>
+            <div class="item">
+            {% image '@LebowskiAndNicoBundlesWebSiteBundle/Resources/public/images/lebowskienico_band.jpg' %}
+                <img src="{{ asset_url }}" alt='lebowski & nico live'/>
+            {% endimage %}
+            <div class="carousel-caption">
+                              <h4>lebowski live</h4>
+                              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+            </div>
+          </div>
+      <a class="carousel-control left" href="#galleryCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#galleryCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+</section>

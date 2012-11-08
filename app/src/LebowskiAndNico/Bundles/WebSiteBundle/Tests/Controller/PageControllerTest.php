@@ -6,8 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class PageControllerTest extends WebTestCase
 {
+    public function testGalleryPage()
+    {
+        $client = static::createClient();
 
-    
+        $crawler = $client->request('GET', '/gallery');
+        
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+    }
+  
     public function testHomePage()
     {
         $client = static::createClient();
@@ -24,7 +31,6 @@ class PageControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/contatti');
         
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $this->assertGreaterThan(0, $crawler->filter('html:contains("Contatti")')->count());
     }
   
     public function testBioPage()
@@ -34,7 +40,6 @@ class PageControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/biografia');
         
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $this->assertGreaterThan(0, $crawler->filter('html:contains("Biografia")')->count());
     }
   
     public function testTourPage()
@@ -44,7 +49,6 @@ class PageControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/tour');
         
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $this->assertGreaterThan(0, $crawler->filter('html:contains("Reasonaze")')->count());
     }
     
     public function testIndexPage()
@@ -54,6 +58,5 @@ class PageControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/');
         
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $this->assertGreaterThan(0, $crawler->filter('html:contains("Reasonaze")')->count());
     }
 }

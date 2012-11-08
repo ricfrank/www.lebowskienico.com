@@ -53,4 +53,13 @@ class PageController extends Controller
           return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:contact.html.twig', array('content' => 'ciao'));
     }
     
+    /**
+     * @Route("/gallery")
+     * @Template()
+     */
+    public function galleryAction()
+    {
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:gallery.html.twig', array('content' => 'ciao'));
+    }
+    
 }
