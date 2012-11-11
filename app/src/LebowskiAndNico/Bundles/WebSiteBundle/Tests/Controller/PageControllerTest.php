@@ -8,6 +8,15 @@ class PageControllerTest extends WebTestCase
 {
     
   
+      public function testDiscoPage()
+    {
+        $client = static::createClient();
+
+        $crawler = $client->request('GET', '/disco');
+        
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+    }
+  
     public function testVideoPage()
     {
         $client = static::createClient();

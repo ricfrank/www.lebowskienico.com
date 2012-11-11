@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lebowski & Nico - Sito ufficiale della band">
+        <meta name="keywords" content="Lebowski & Nico, Propaganda">
+        <meta name="author" content="ricfrank">
         <title>{% block title %}Lebowski & Nico{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
@@ -10,6 +13,19 @@
     </head>
     <body data-spy="scroll" data-target=".LeftCol">
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+          <script type="text/javascript">
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-36264708-1']);
+              _gaq.push(['_trackPageview']);
+
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+
+            </script>
+        {% endblock %}
     </body>
 </html>

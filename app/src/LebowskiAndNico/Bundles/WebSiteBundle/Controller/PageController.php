@@ -81,4 +81,13 @@ class PageController extends Controller
           return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:video.html.twig');
     }
     
+    /**
+     * @Route("/disco")
+     * @Template()
+     */
+    public function discoAction()
+    {
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:disco.html.twig');
+    }
+    
 }
