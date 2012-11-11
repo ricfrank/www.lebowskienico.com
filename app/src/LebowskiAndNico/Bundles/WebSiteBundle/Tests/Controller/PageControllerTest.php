@@ -6,6 +6,26 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class PageControllerTest extends WebTestCase
 {
+    
+  
+    public function testVideoPage()
+    {
+        $client = static::createClient();
+
+        $crawler = $client->request('GET', '/video');
+        
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+    }
+    
+    public function testListenPage()
+    {
+        $client = static::createClient();
+
+        $crawler = $client->request('GET', '/listenpropaganda');
+        
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+    }
+    
     public function testGalleryPage()
     {
         $client = static::createClient();

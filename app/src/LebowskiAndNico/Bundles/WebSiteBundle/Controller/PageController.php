@@ -14,7 +14,7 @@ class PageController extends Controller
      */
     public function indexAction()
     {
-          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:index.html.twig', array('name' => 'ciao'));
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:index.html.twig');
     }
     
      /**
@@ -23,7 +23,7 @@ class PageController extends Controller
      */
     public function tourAction()
     {
-          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:tour.html.twig', array('content' => 'ciao'));
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:tour.html.twig');
     }
     
     /**
@@ -32,7 +32,7 @@ class PageController extends Controller
      */
     public function bioAction()
     {
-          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:bio.html.twig', array('content' => 'ciao'));
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:bio.html.twig');
     }
     
     /**
@@ -41,7 +41,7 @@ class PageController extends Controller
      */
     public function homeAction()
     {
-          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:home.html.twig', array('content' => 'ciao'));
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:home.html.twig');
     }
     
     /**
@@ -50,7 +50,7 @@ class PageController extends Controller
      */
     public function contactAction()
     {
-          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:contact.html.twig', array('content' => 'ciao'));
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:contact.html.twig');
     }
     
     /**
@@ -59,7 +59,25 @@ class PageController extends Controller
      */
     public function galleryAction()
     {
-          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:gallery.html.twig', array('content' => 'ciao'));
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:gallery.html.twig');
+    }
+    
+    /**
+     * @Route("/listenpropaganda")
+     * @Template()
+     */
+    public function listenPropagandaAction()
+    {
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:listenpropaganda.html.twig');
+    }
+    
+    /**
+     * @Route("/video")
+     * @Template()
+     */
+    public function videoAction()
+    {
+          return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:video.html.twig');
     }
     
 }
