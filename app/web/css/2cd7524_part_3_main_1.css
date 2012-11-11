@@ -1,6 +1,6 @@
 .MainContainer{
   background-color: #F7F7F7;
-  background-image: url('../images/square-grid.png');
+  background-image: url('../../bundles/lebowskiandnicobundleswebsite/images/square-grid.png');
   background-repeat: repeat;
 }
 
@@ -9,7 +9,7 @@
   text-align: right;
   padding-top: 80px;
   background-color: #2B2B2B;
-  background-image: url('../images/left_col_background.png');
+  background-image: url('../../bundles/lebowskiandnicobundleswebsite/images/left_col_background.png');
 }
 
 .MainMenu a{
@@ -75,9 +75,4 @@
   width: 660px;
   height: 523px;
   text-align: center;
-}
-
-#LebowskiNicoBio img{
-  margin-bottom: 20px;
-  margin-top: 20px;
 }

@@ -3,6 +3,7 @@
 namespace LebowskiAndNico\Bundles\WebSiteBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
@@ -12,7 +13,7 @@ class PageController extends Controller
      * @Route("/")
      * @Template()
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
           return $this->render('LebowskiAndNicoBundlesWebSiteBundle:Page:index.html.twig');
     }
