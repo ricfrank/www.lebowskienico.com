@@ -19,7 +19,7 @@ class PageController extends Controller
     }
     
      /**
-     * @Route("/tour")
+     *
      * @Template()
      */
     public function tourAction()
@@ -28,7 +28,7 @@ class PageController extends Controller
     }
     
     /**
-     * @Route("/biografia")
+     * 
      * @Template()
      */
     public function bioAction()
@@ -37,7 +37,7 @@ class PageController extends Controller
     }
     
     /**
-     * @Route("/home")
+     * 
      * @Template()
      */
     public function homeAction()
@@ -46,7 +46,7 @@ class PageController extends Controller
     }
     
     /**
-     * @Route("/contatti")
+     * 
      * @Template()
      */
     public function contactAction()
@@ -55,7 +55,7 @@ class PageController extends Controller
     }
     
     /**
-     * @Route("/gallery")
+     * 
      * @Template()
      */
     public function galleryAction()
@@ -64,7 +64,7 @@ class PageController extends Controller
     }
     
     /**
-     * @Route("/listenpropaganda")
+     * 
      * @Template()
      */
     public function listenPropagandaAction()
@@ -73,7 +73,7 @@ class PageController extends Controller
     }
     
     /**
-     * @Route("/video")
+     * 
      * @Template()
      */
     public function videoAction()
@@ -82,7 +82,7 @@ class PageController extends Controller
     }
     
     /**
-     * @Route("/disco")
+     * 
      * @Template()
      */
     public function discoAction()

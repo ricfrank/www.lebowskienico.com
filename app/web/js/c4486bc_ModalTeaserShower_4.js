@@ -10,5 +10,9 @@ var lebowskienico = lebowskienico || {};
         if(!lebowskienico.isMobile()){
             $('#teaserPropaganda').modal('show');
         }
+        console.log("WWWrr");
     });
 })(jQuery);
+
+
+ console.log("WWWrr");

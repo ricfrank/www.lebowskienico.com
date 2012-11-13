@@ -103,3 +103,19 @@ div.Separatore{
 .nav-list li a.SocialLink{
   color: #f23e45;
 }
+
+.carousel-inner,
+.carousel{
+  max-width: 800px;
+}
+
+/* Landscape phone to portrait tablet */
+@media screen and (max-width: 767px) {
+  .MainMenu {
+    display :none;
+  }
+  
+  .row-fluid .span8 {
+    width: 100%;
+  }
+}

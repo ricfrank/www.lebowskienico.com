@@ -6910,3 +6910,46 @@ a.badge:hover {
   height: 523px;
   text-align: center;
 }
+
+#LebowskiNicoBio img{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#LebowskiNicoDisco .TrackList{
+  float: left;
+  margin-right: 30px;
+  width: 400px;
+}
+
+#LebowskiNicoDisco .CoverCD{
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+div.Separatore{
+  width: 100px;
+  height: 1px;
+  clear: both;
+}
+
+.nav-list li a.SocialLink{
+  color: #f23e45;
+}
+
+.carousel-inner,
+.carousel{
+  max-width: 800px;
+}
+
+/* Landscape phone to portrait tablet */
+@media screen and (max-width: 767px) {
+  .MainMenu {
+    display :none;
+  }
+  
+  .row-fluid .span8 {
+    width: 100%;
+  }
+}
